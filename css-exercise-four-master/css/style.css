@@ -1,4 +1,144 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dadada;
+  background-color: #fffff;
   font-size: 10px;
+  /* background-image: url(../images/baku.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  display:block;
+  */
+}
+
+.container {
+  display: block;
+  width: 360px;
+  height: 100%;
+  background-color: #c4c4c4;
+  margin: 8px;
+  padding-top: 2%;
+  text-align: left;
+  min-width: 28.1%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.title {
+  background-color: #c4c4c4;
+  background-size: cover;
+  font-family: sans-serif;
+  letter-spacing: .2em;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 0px;
+  padding-left: 21%;
+  margin-bottom: 4%;
+  padding-top: 4%;
+  padding-bottom: 1%;
+  text-transform: uppercase;
+  text-align: left;
+    width: 80%;
+}
+
+
+.baku {
+  background-image: url(../images/baku.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  width: 360px;
+  height: 250px;
+
+}
+
+.london {
+  background-image: url(../images/london.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 360px;
+  height: 250px;
+
+}
+
+.madrid {
+  background-image: url(../images/madrid.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 360px;
+  height: 250px;
+
+}
+
+.rome {
+  background-image: url(../images/rome.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 360px;
+  height: 250px;
+
+}
+
+h2 {
+  display: block;
+  font-family: serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  padding-left: 0%;
+  margin-left: 10%;
+  margin-top: 5%;
+  padding-top: 5%;
+}
+/* code added to create two-column design */
+@media screen and (min-width: 575px){
+   .container, .title {
+     margin: 1%;
+    margin-left: -5%;
+    width: inherit;
+    background-color: #c4c4c4;
+  }
+  .title {
+    margin-left: 20%
+  }
+  .rome, .london, .madrid, .baku {
+    display: inline-block;
+    background-size: cover;
+    margin: .5%;
+/*    margin-left: 10%;*/
+    width: 36%;
+    padding-left: 0%;
+  }
+}
+
+
+/* code added to create four-column design */
+@media screen and (min-width: 991px) {
+   .container, .title {
+    margin: 0% ;
+    width: 90%;
+    padding: 2%;
+    height: 2000px;
+    background-color: #c4c4c4;
+  }
+  .title {
+    margin-left: 35%
+  }
+  .rome, .london, .madrid, .baku {
+    display: inline-block;
+    margin: 1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 80%;
+    height: 80%;
+  }
+
 }
